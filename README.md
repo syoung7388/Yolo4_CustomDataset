@@ -20,8 +20,8 @@ cd data
 - make "data.txt"
 ```
 python3 make_txt.py --dataset_path "absolute path" 
-```
 ex) python3 make_txt.py --dataset_path "/NasData/home/ksy/2023-1/PyTorch_YOLOv4/data/custom_datas"
+```
 
 **1. Edit config file (./cfg/yolov4-custom.cfg)**
 ```
