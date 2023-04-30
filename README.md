@@ -20,8 +20,9 @@ cd data
 - make "data.txt"
 ```
 python3 make_txt.py --dataset_path "absolute path" 
-ex) python3 make_txt.py --dataset_path "/NasData/home/ksy/2023-1/PyTorch_YOLOv4/data/custom_datas"
 ```
+ex) python3 make_txt.py --dataset_path "/NasData/home/ksy/2023-1/PyTorch_YOLOv4/data/custom_datas"
+
 **1. Edit config file (./cfg/yolov4-custom.cfg)**
 ```
 cd cfg
@@ -47,9 +48,10 @@ names: ['car', 'autocycle', 'people']
 ```
 
 **3. Download weights**
-
 ```
 cd weights
+```
+```
 wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 ```
 
