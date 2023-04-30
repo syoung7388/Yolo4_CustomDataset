@@ -1,0 +1,10 @@
+# train and val datasets (image directory or *.txt file with image paths)
+train: ./data/custom_datas/custom_train_data.txt  
+val: ./data/custom_datas/custom_valid_data.txt  
+test: ./data/custom_datas/custom_test_data.txt
+
+# number of classes
+nc: 3
+
+# class names
+names: ['car', 'autocycle', 'people']
