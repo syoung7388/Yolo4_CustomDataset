@@ -2,7 +2,7 @@
 
 ## Downloads
 ```
-git clone git@github.com:syoung7388/Yolo4_CustomDataset.git
+git clone https://github.com/syoung7388/Yolo4_CustomDataset
 ```
 
 ## Requirements
