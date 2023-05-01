@@ -64,5 +64,5 @@ python train.py --device 0 --batch-size 32 --img 640 640 --data ./data/custom_da
 **5. Testing**
 
 ```
-python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data ./data/custom_data.yaml --cfg cfg/yolov4-custom.cfg --weights weights/yolov4-custom.pt
+python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data ./data/custom_data.yaml --cfg cfg/yolov4-custom.cfg --weights trained_weight_path
 ```
