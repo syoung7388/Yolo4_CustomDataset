@@ -2,10 +2,17 @@
 
 ## Downloads
 ```
-git clone git@github.com:syoung7388/Yolo4_CustomDataset.git
+git clone https://github.com/syoung7388/Yolo4_CustomDataset
 ```
 
 ## Requirements
+```
+conda create -n yolov4 python==3.6.9
+```
+```
+conda activate yolov4
+```
+
 ```
 pip install -r requirements.txt
 ```
@@ -22,6 +29,7 @@ cd data
 python3 make_txt.py --dataset_path "absolute path" 
 ex) python3 make_txt.py --dataset_path "/NasData/home/ksy/2023-1/PyTorch_YOLOv4/data/custom_datas"
 ```
+
 **1. Edit config file (./cfg/yolov4-custom.cfg)**
 ```
 cd cfg
@@ -47,9 +55,10 @@ names: ['car', 'autocycle', 'people']
 ```
 
 **3. Download weights**
-
 ```
 cd weights
+```
+```
 wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.conv.137
 ```
 
@@ -62,5 +71,5 @@ python train.py --device 0 --batch-size 32 --img 640 640 --data ./data/custom_da
 **5. Testing**
 
 ```
-python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data ./data/custom_data.yaml --cfg cfg/yolov4-custom.cfg --weights weights/yolov4-custom.pt
+python test.py --img 640 --conf 0.001 --batch 8 --device 0 --data ./data/custom_data.yaml --cfg cfg/yolov4-custom.cfg --weights trained_weight_path
 ```
