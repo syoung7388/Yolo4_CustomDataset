@@ -9,7 +9,9 @@ git clone https://github.com/syoung7388/Yolo4_CustomDataset
 ```
 conda create -n yolov4 python==3.6.9
 ```
-
+```
+conda activate yolov4
+```
 
 ```
 pip install -r requirements.txt
