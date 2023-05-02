@@ -65,7 +65,7 @@ wget https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optim
 **4. Training**
 
 ```
-python train.py --device 0 --batch-size 32 --img 640 640 --data ./data/custom_data.yaml --cfg cfg/yolov4-custom.cfg --hyp 'data/cusyom_data.yaml' --weights 'yolov4.conv.137' --name yolov4-custom
+python train.py --device 0 --batch-size 32 --img 640 640 --data data/hyp.scratch.yaml --cfg cfg/yolov4-custom.cfg --hyp 'data/cusyom_data.yaml' --weights 'yolov4.conv.137' --name yolov4-custom
 ```
 
 **5. Testing**
